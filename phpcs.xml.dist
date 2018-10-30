@@ -107,23 +107,23 @@
 			 * /wp-includes/compat.php
 			 * /wp-includes/random_compat/random.php
 		-->
-		<exclude name="PHPCompatibility.PHP.NewClasses.errorFound"/>
-		<exclude name="PHPCompatibility.PHP.NewClasses.typeerrorFound"/>
+		<exclude name="PHPCompatibility.Classes.NewClasses.errorFound"/>
+		<exclude name="PHPCompatibility.Classes.NewClasses.typeerrorFound"/>
 
-		<exclude name="PHPCompatibility.PHP.NewConstants.json_pretty_printFound"/>
-		<exclude name="PHPCompatibility.PHP.NewConstants.php_version_idFound"/>
+		<exclude name="PHPCompatibility.Constants.NewConstants.json_pretty_printFound"/>
+		<exclude name="PHPCompatibility.Constants.NewConstants.php_version_idFound"/>
 
-		<exclude name="PHPCompatibility.PHP.NewFunctions.hash_equalsFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.json_last_error_msgFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.random_intFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.random_bytesFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.array_replace_recursiveFound"/>
+		<exclude name="PHPCompatibility.FunctionUse.NewFunctions.hash_equalsFound"/>
+		<exclude name="PHPCompatibility.FunctionUse.NewFunctions.json_last_error_msgFound"/>
+		<exclude name="PHPCompatibility.FunctionUse.NewFunctions.random_intFound"/>
+		<exclude name="PHPCompatibility.FunctionUse.NewFunctions.random_bytesFound"/>
+		<exclude name="PHPCompatibility.FunctionUse.NewFunctions.array_replace_recursiveFound"/>
 
-		<exclude name="PHPCompatibility.PHP.NewInterfaces.jsonserializableFound"/>
+		<exclude name="PHPCompatibility.Interfaces.NewInterfaces.jsonserializableFound"/>
 	</rule>
 
 	<!-- Whitelist the WP Core mysql_to_rfc3339() function. -->
-	<rule ref="PHPCompatibility.PHP.RemovedExtensions">
+	<rule ref="PHPCompatibility.Extensions.RemovedExtensions">
 		<properties>
 			<property name="functionWhitelist" type="array" value="mysql_to_rfc3339"/>
 		</properties>
